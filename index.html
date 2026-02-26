@@ -1,39 +1,442 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Web-project</title>
-    <link href="/src/style.css" rel="stylesheet" />
-    <!-- //googlefonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- //googlefonts -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/css/tabler.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <div class=""></div>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      class="icon icon-tabler icons-tabler-filled icon-tabler-home"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path
-        d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z"
-      />
-    </svg>
-    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/js/tabler.min.js"></script>
-  </body>
+  <title>Web-project</title>
+  <link href="./src/style.css" rel="stylesheet" />
+  <!-- //googlefonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- //googlefonts -->
+</head>
+
+<body class="font-inter">
+  <!-- nav starts -->
+  <section id="shawon-nav" class="bg-black py-2">
+    <div class="container">
+      <div class="flex justify-between items-center">
+        <div class=""><img src="public/logo.png" alt="" class="flex justify-center"></div>
+        <div class="">
+          <ul class="flex items-center justify-center gap-14">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">About</a></li>
+            <li><a href="#" class="text-white">Shop</a></li>
+            <li><a href="#" class="text-white">Blog</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class=""><button
+            class="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500  rounded-lg text-white flex items-center gap-2 cursor-pointer">Enroll
+            Now <img src="public/arrow.svg" alt=""></button></div>
+      </div>
+    </div>
+  </section>
+  <!-- nav ends -->
+
+  <!-- banner starts -->
+  <section id="shawon-banner" class="relative w-full h-screen overflow-hidden">
+    <img src="public/banner.png" alt="" class="absolute inset-0 w-full h-full object-cover object-center">
+    <div class="container absolute top-40 left-173">>
+      <span class="inline-flex items-center gap-2 bg-[#FBFF8D] px-4 py-2 rounded-[20px]">
+        <img src="public/fire.png" alt="">
+        <h1 class="text-black italic">
+          Some overline text will be here with excitement
+        </h1>
+      </span>
+      <div class="mt-6 ml-4">
+        <div class="text-white text-[72px] font-bold">Title Will Be Here</div>
+        <div class="text-[72px] text-[#7F5CFF] italic font-bold">Web & Software</div>
+      </div>
+
+      <div class="flex items-center gap-8 mt-6 ml-4">
+        <div class="">
+          <h1 class="p-2 bg-[#634071] inline-flex gap-3 text-white border-2 rounded-lg border-[#EDB5FF]">CTA Label
+            <span><img src="public/heart rate-monitor.svg" alt=""></span></h1>
+        </div>
+        <div class="">
+          <h1 class="p-2 bg-[#3D6849] inline-flex gap-3 text-white border-2 rounded-lg border-[#96FFA2]">CTA Label
+            <span><img src="public/users.svg" alt=""></span></h1>
+        </div>
+        <div class="">
+          <h1 class="p-2 bg-[#7C523D] inline-flex gap-3 text-white border-2 rounded-lg border-[#FFC081]">CTA Label
+            <span><img src="public/crown.svg" alt=""></span></h1>
+        </div>
+      </div>
+      <div class="mt-6 ml-4">
+        <p class="text-[#A9B0B8] w-[576px] text-[17px]">Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
+          eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat
+          lobortis. Diam diam tellus ultricies. Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
+          at non suscipit. Felis posuere maecenas interdum sit cras. </p>
+      </div>
+
+      <div class="mt-8 ml-4">
+        <button
+          class="px-4 py-2 rounded-lg text-white border-2 border-[#7451FD] hover:bg-blue-500 inline-flex gap-3 transition-all ease-in-out duration-200 cursor-pointer">Download
+          Curriculum <span><img src="public/arrow-bar-to-down.svg" alt=""></span></button>
+        <button
+          class="px-4 py-2 rounded-lg text-white border-2 border-[#7451FD] hover:bg-blue-500 inline-flex gap-3 transition-all ease-in-out duration-200 cursor-pointer">CTA
+          Label Here <span><img src="public/crown (1).svg" alt=""></span></button>
+      </div>
+    </div>
+    <!-- ban form -->
+    <div class="container absolute top-30 right-10">
+
+      <!--gradient border -->
+      <div class="relative inline-block">
+
+        <div class="absolute -inset-1 rounded-2xl 
+                bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800
+                blur-xl opacity-40">
+        </div>
+
+        <div class="relative p-[2px] rounded-2xl 
+                bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800">
+
+          <div class="bg-[#0f172a] rounded-2xl p-8 w-[480px] text-white">
+
+            <h1 class="text-2xl font-semibold text-center">
+              Book Your Seat Now
+            </h1>
+
+            <p class="text-gray-400 text-center mt-2 mb-8">
+              Start building your professional career for free
+            </p>
+
+            <!-- input -->
+            <div class="input-one mb-5">
+              <h2 class="text-sm text-gray-300 mb-2">Your Full Name</h2>
+              <input type="text" placeholder="Enter Here" class="w-full px-4 py-3 rounded-lg
+                   bg-white/5 border border-white/10
+                   placeholder-gray-400
+                   focus:outline-none focus:ring-2 
+                   focus:ring-blue-500 transition">
+            </div>
+
+            <div class="input-two mb-5">
+              <h2 class="text-sm text-gray-300 mb-2">Email Address</h2>
+              <input type="text" placeholder="Enter Here" class="w-full px-4 py-3 rounded-lg
+                   bg-white/5 border border-white/10
+                   placeholder-gray-400
+                   focus:outline-none focus:ring-2 
+                   focus:ring-blue-500 transition">
+            </div>
+
+            <div class="input-three mb-5">
+              <h2 class="text-sm text-gray-300 mb-2">Phone Number</h2>
+              <input type="text" placeholder="Enter Here" class="w-full px-4 py-3 rounded-lg
+                   bg-white/5 border border-white/10
+                   placeholder-gray-400
+                   focus:outline-none focus:ring-2 
+                   focus:ring-blue-500 transition">
+            </div>
+
+            <div class="input-four mb-7">
+              <h2 class="text-sm text-gray-300 mb-2">Career Goals</h2>
+              <input type="text" placeholder="Enter Here" class="w-full px-4 py-3 rounded-lg
+                   bg-white/5 border border-white/10
+                   placeholder-gray-400
+                   focus:outline-none focus:ring-2 
+                   focus:ring-blue-500 transition">
+            </div>
+            <button class="w-full py-3 rounded-lg
+                       bg-gradient-to-r from-purple-500 to-blue-500
+                       hover:opacity-90 transition
+                       flex items-center justify-center gap-2 font-medium cursor-pointer">
+              CTA Label Here →
+            </button>
+            <p class="text-gray-500 text-sm text-center mt-5">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ban form -->
+  </section>
+  <!-- banner ends -->
+
+  <!-- course module -->
+  <section class="relative w-full h-screen overflow-hidden">
+    <img src="public/Course Module 1.png" alt="" class="absolute inset-0 w-full h-full ">
+
+    <div class="container absolute top-20 left-168">
+      <h1 class="text-white text-center text-[62px] mt-20 font-bold">Here Will Be <span class="italic bg-gradient-to-r from-purple-300 to-blue-500
+           bg-clip-text text-transparent">Course Module</span></h1>
+      <p class="w-[809px] text-center text-gray-400 ml-[150px] mb-16">Lorem ipsum dolor sit amet consectetur. Orci est elit
+        tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut
+        volutpat lobortis.</p>
+<!-- one -->
+      <div class="grid grid-cols-2">
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 w-[548px] ml-10 rounded-lg overflow-hidden border-2 border-[#7451FD]">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Containerrr.svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+
+    <!-- dropdown-->
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis es et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 rounded-lg w-[548px] border-2 border-[#7451FD] ml-10 overflow-hidden">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Container.svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+      </div>
+      <!-- one end -->
+       <div class="grid grid-cols-2 mt-5">
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 w-[548px] ml-10 rounded-lg border-2 border-[#7451FD] overflow-hidden">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Container (1).svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+
+    <!-- dropdown -->
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 rounded-lg w-[548px] ml-10 border-2 border-[#7451FD] overflow-hidden">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Container (2).svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+      </div>
+      <!-- two end -->
+         <div class="grid grid-cols-2 mt-5">
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 w-[548px] ml-10 rounded-lg border-2 border-[#7451FD] overflow-hidden">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Container (3).svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+
+    <!-- dropdown -->
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 rounded-lg w-[548px] ml-10 border-2 border-[#7451FD] overflow-hidden">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Container (4).svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+      </div>
+      <!-- three ends -->
+         <div class="grid grid-cols-2 mt-5">
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 w-[548px] ml-10 rounded-lg border-2 border-[#7451FD] overflow-hidden">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Container (5).svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+
+    <!-- dropdown -->
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+   <div class="col-span-1">
+
+  <details class="bg-slate-900 rounded-lg w-[548px] ml-10 border-2 border-[#7451FD] overflow-hidden">
+    <summary
+      class="cursor-pointer list-none 
+              text-white 
+             w-[558px] px-4 py-3
+             flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="public/Container (6).svg" alt="">
+        <span>Module title will be here</span>
+      </div>
+
+      <span class="transition-transform duration-300 group-open:rotate-180">
+        ▼
+      </span>
+    </summary>
+    <div class="px-4 py-4 text-gray-300 border-t border-white/10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien.
+        Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit.
+        Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis.
+        Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
+      </p>
+    </div>
+
+  </details>
+
+</div>
+      </div>
+      <!-- four ends -->
+       <div class="max-w-40 mx-auto mt-8">
+        <button class="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg text-white flex items-center gap-2 cursor-pointer">Load More</button>
+       </div>
+    </div>
+  </section>
+  <!-- course module -->
+</body>
+
 </html>
