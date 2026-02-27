@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-* {
-  padding: 0;
-  margin: 0;
-}
+
 @theme {
   --color-linear-1: #4e95ff;
   --color-linear-2: #7f5cff;
@@ -19,7 +16,7 @@
   --default-font-family: "Inter", sans-serif;
 }
 @layer utilities {
-  .container-custom {
+  .container{
     @apply max-w-285  mx-auto;
   }
 }
