@@ -20,11 +20,18 @@
     @apply max-w-285  mx-auto;
   }
 }
+.input-icon-fullname {
+  background-image: url("/public/user.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 20px;
+  padding-left: 48px !important;
+}
 
 .input-one input {
   background-image: url("/user.svg");
   background-repeat: no-repeat;
-  background-position: 12px center;
+  background-position: 16px center;
   background-size: 20px;
   padding-left: 40px;
 }
