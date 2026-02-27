@@ -1,8 +1,11 @@
 @import "tailwindcss";
+footer2farhad
+
 
  promotionFarhad
 
 
+ main
  main
 @theme {
   --color-linear-1: #4e95ff;
@@ -20,11 +23,16 @@
 }
 
 @layer utilities {
+ footer2farhad
+  .container{
+    @apply max-w-285  mx-auto;
+=======
 promotionFarhad
   .container{
 
   .container {
     @apply max-w-285 mx-auto px-6;
+ main
   }
 
 .input-icon-fullname {
