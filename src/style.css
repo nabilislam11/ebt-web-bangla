@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+ promotionFarhad
+
+
+ main
 @theme {
   --color-linear-1: #4e95ff;
   --color-linear-2: #7f5cff;
@@ -16,6 +20,9 @@
 }
 
 @layer utilities {
+promotionFarhad
+  .container{
+
   .container {
     @apply max-w-285 mx-auto px-6;
   }
