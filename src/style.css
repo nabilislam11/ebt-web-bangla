@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+ promotionFarhad
+
+
+ main
 @theme {
   --color-linear-1: #4e95ff;
   --color-linear-2: #7f5cff;
@@ -14,8 +18,43 @@
   --color-gray-4: #45587c;
   --font-inter: "Inter", sans-serif;
 }
+
 @layer utilities {
+promotionFarhad
+  .container{
+
   .container {
+ main
     @apply max-w-285  mx-auto;
   }
 }
+
+.input-one input {
+  background-image: url('/user.svg');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 20px;
+  padding-left: 40px;
+}
+.input-two input {
+  background-image: url('/mail.svg');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 20px;
+  padding-left: 40px;
+}
+.input-three input {
+  background-image: url('/phone-call.svg');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 20px;
+  padding-left: 40px;
+}
+.input-four input {
+  background-image: url('/award.svg');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 20px;
+  padding-left: 40px;
+}
+
