@@ -1,6 +1,12 @@
 @import "tailwindcss";
+footer2farhad
 
 
+ promotionFarhad
+
+
+ main
+ main
 @theme {
   --color-linear-1: #4e95ff;
   --color-linear-2: #7f5cff;
@@ -13,10 +19,79 @@
   --color-gray-2: #a9b0b8;
   --color-gray-3: #e9f0f8;
   --color-gray-4: #45587c;
-  --default-font-family: "Inter", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
+
 @layer utilities {
+ footer2farhad
   .container{
     @apply max-w-285  mx-auto;
+=======
+promotionFarhad
+  .container{
+
+  .container {
+    @apply max-w-285 mx-auto px-6;
+ main
   }
+
+.input-icon-fullname {
+  background-image: url('/public/user.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 20px;
+  padding-left: 48px !important;
+}
+
+.input-icon-email {
+  background-image: url('/public/mail.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 20px;
+  padding-left: 48px !important;
+}
+
+.input-icon-phone {
+  background-image: url('/public/phone-call.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 20px;
+  padding-left: 48px !important;
+}
+
+.input-icon-goals {
+  background-image: url('/public/award.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 20px;
+  padding-left: 48px !important;
+}
+
+.dropdown {
+  transition: all 0.3s ease;
+}
+
+.dropdown.active {
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.dropdown-content {
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown-content > div {
+  transform: translateY(-10px);
+  transition: transform 0.4s ease 0.1s;
+}
+
+.dropdown.active .dropdown-content > div {
+  transform: translateY(0);
+}
+
+.dropdown-arrow svg {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
 }
