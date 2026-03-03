@@ -15,9 +15,9 @@
     <!-- //googlefonts --> 
   </head>
    
-<body class="font-inter bg-black text-white">
+<body class="font-inter text-white">
   <!-- Nav -->
-<section id="shawn-navbar" class="py-4 border-b border-white/10 relative">
+<section id="shawn-navbar" class="py-4 border-b bg-black border-white/10 relative">
   <div class="container mx-auto flex items-center justify-between py-4">
     <div class="">
       <img src="public/logo.png" alt="Logo">
@@ -203,7 +203,7 @@
     </div>
   </div>
 </section>
-    <section id="promotionVideo">
+    <!-- <section id="promotionVideo">
     <div class="bg-[#02000f] w-full py-6">
 
       <div class="text-center gap-4 ">
@@ -272,10 +272,83 @@
 
     </div>
 
-  </section>
+  </section> -->
+ <section id="promotionVideo"
+  class="relative py-20 bg-black md:bg-[url('/images/prmtBanr.png')] bg-[position:center_top] bg-center bg-no-repeat">
 
+  <div class="container mx-auto relative z-10">
+
+    <!-- Heading -->
+    <div class="text-center px-4">
+      <h2 class="text-white text-3xl md:text-[56px] font-bold">
+        Here Will Be
+        <span class="italic text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500">
+          Promotion Video
+        </span>
+      </h2>
+
+      <p class="text-white text-sm max-w-2xl mx-auto mt-4 leading-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+
+    <!-- Video Box -->
+    <div class="mt-12 px-4">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="p-[3px] bg-gradient-to-r from-[#4e95ff] to-[#7f5cff] rounded-2xl">
+
+          <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black">
+
+            <iframe
+              src="https://www.youtube.com/embed/hhQrmc2T-DU"
+              class="absolute inset-0 w-full h-full"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Text Section -->
+    <div class="mt-16 grid md:grid-cols-3 gap-10 text-gray-300 text-sm px-4">
+      
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">
+          Some Text Will Be Here
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">
+          Some Text Will Be Here
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">
+          Some Text Will Be Here
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
   <!-- Course module-->
-<section id="shawn-course-module" class="relative lg:py-15 overflow-hidden">
+<section id="shawn-course-module" class="relative lg:py-15 overflow-hidden bg-black">
 
   <img src="public/Course Module 1.png"
        class="absolute inset-0 w-full h-auto max-w-full object-contain">
@@ -511,8 +584,8 @@
 
 <!-- career starts -->
 
-<section id="shawn-career" class="relative py-10 px-6">
-  <div class="relative max-w-7xl mx-auto rounded-3xl bg-gradient-to-r from-[#10143a] to-[#1d1655] p-8 md:p-14 shadow-2xl overflow-hidden">
+<section id="shawn-career" class="relative py-10 px-6 bg-black ">
+  <div class=" relative max-w-7xl mx-auto rounded-3xl bg-gradient-to-r from-[#10143a] to-[#1d1655] p-8 md:p-14 shadow-2xl overflow-hidden">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-white">
@@ -877,7 +950,7 @@
     <!-- PROJECT SECTION -->
 <!-- ROADMAP SECTION -->
  <section id="roadmap/nabil">
-    <div class=" relative py-10 md:py-20 px-[4px] lg:px-0">
+    <div class=" relative py-10 md:py-20 px-[4px] lg:px-0 bg-black">
         <img class="object-cover absolute inset-0 w-full h-full" src="./public/images/roadmap.svg" alt="project">
       <div class="container mx-auto flex flex-col gap-8
         ">
@@ -978,7 +1051,7 @@
     </section>
     <!--slider-section -->
  <section id="slider/nabil">
-    <div class=" relative py-10 md:py-20 px-[4px] lg:px-0">
+    <div class=" relative py-10 md:py-20 px-[4px] lg:px-0 bg-black">
         <img class="object-cover absolute inset-0 w-full h-full" src="./public/images/roadmap.svg" alt="project">
       <div class=" flex flex-col gap-8
         ">
@@ -1275,7 +1348,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 md:gap-4 sm:4 lg:items-center items-start  border-b border-purple-800 pb-10">
       
        <div class="w-40 lg:w-70 lg:mx-0 mx-auto">
-  <img src="src/logo.png" alt="logo.png" class="">
+  <img src="public/images/logo.png" alt="logo.png" class="">
 </div>
 
       <div class="text-center">
@@ -1283,24 +1356,24 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-sm text-gray-300">
           <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px]">
             <span class="text-[#7B61FF]">
-    <img src="/src/phone-call.png" alt="" class="lg:w-5 w-4">
+    <img src="/public/images/phone-call.png" alt="" class="lg:w-5 w-4">
 
             </span> 017XX XXX XXX
           </div>
           <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px] ">
             <span class="text-[#7B61FF]">
-              <img src="/src/mail.png" alt="" class="lg:w-5 w-4">
+              <img src="/public/images/mail.png" alt="" class="lg:w-5 w-4">
             </span> supposemail.com
           </div>
           <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px]">
             <span class="text-[#7B61FF]">
-            <img src="/src/phone-call.png" alt="" class="lg:w-5 w-4">   
+            <img src="/public/images/phone-call.png" alt="" class="lg:w-5 w-4">   
 
             </span> 017XX XXX XXX
           </div>
           <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px]">
             <span class="text-[#7B61FF]">
-               <img src="/src/mail.png" alt="" class="lg:w-5 w-4">
+               <img src="/public/images/mail.png" alt="" class="lg:w-5 w-4">
             </span> supposemail.com
           </div>
         </div>
@@ -1309,8 +1382,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="text-center  col-span-2 lg:col-span-1  ">
         <h3 class="text-lg font-medium mb-4  lg:-mr-40 ">Download App</h3>
         <div class="flex justify-center  lg:justify-end gap-3">
-          <img src="src/foterl1.png" alt="Play Store" class="h-12 cursor-pointer">
-          <img src="src/foterl2.png" alt="App Store" class="h-12 cursor-pointer">
+          <img src="/public/images/foterl1.png" alt="Play Store" class="h-12 cursor-pointer">
+          <img src="public/images/foterl2.png" alt="App Store" class="h-12 cursor-pointer">
         </div>
       </div>
     </div>
