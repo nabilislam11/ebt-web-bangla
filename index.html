@@ -1,0 +1,1425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Web-project</title>
+    <link href="/src/style.css" rel="stylesheet" />
+    <!-- //googlefonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //googlefonts --> 
+  </head>
+   
+<body class="font-inter text-white">
+  <!-- Nav -->
+<section id="shawn-navbar" class="py-4 border-b bg-black border-white/10 relative">
+  <div class="container mx-auto flex items-center justify-between py-4">
+    <div class="">
+      <img src="public/logo.png" alt="Logo">
+    </div>
+    <div class="">
+    <ul class="hidden md:flex gap-10">
+      <li><a href="#" class="hover:text-blue-400">টাইটেল</a></li>
+      <li><a href="#" class="hover:text-blue-400">টাইটেল</a></li>
+      <li><a href="#" class="hover:text-blue-400">টাইটেল</a></li>
+      <li><a href="#" class="hover:text-blue-400">টাইটেল</a></li>
+      <li><a href="#" class="hover:text-blue-400">টাইটেল</a></li>
+    </ul>
+    </div>
+    <div class="hidden md:block">
+
+      <button class=" cursor-pointer  md:flex px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg items-center gap-32">
+        এনরোল করুন→
+      </button>
+    </div>
+
+    <!-- Mobile -->
+    <button id="menu-btn" class="md:hidden text-white">
+      <svg id="menu-open" xmlns="http://www.w3.org/2000/svg"
+           class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="menu-close" xmlns="http://www.w3.org/2000/svg"
+           class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!--Dropdown-->
+ <div id="mobile-menu"
+     class="md:hidden overflow-hidden max-h-0 opacity-0
+            transition-all duration-500 ease-in-out
+            px-6 space-y-6 border-t text-center border-white/10">
+     
+  <div class="pt-6 pb-8">
+    <a href="#" class="block hover:text-blue-400">টাইটেল</a>
+    <a href="#" class="block hover:text-blue-400 mt-6">টাইটেল</a>
+    <a href="#" class="block hover:text-blue-400 mt-6">টাইটেল</a>
+    <a href="#" class="block hover:text-blue-400 mt-6">টাইটেল</a>
+    <a href="#" class="block hover:text-blue-400 mt-6">টাইটেল</a>
+
+    <button class="w-full mt-6 px-4 py-3 bg-gradient-to-r cursor-pointer from-purple-500 to-blue-500 rounded-lg">
+      এনরোল করুন→
+    </button>
+  </div>
+</div>
+</section>
+
+<!-- Minimal JS -->
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  const openIcon = document.getElementById("menu-open");
+  const closeIcon = document.getElementById("menu-close");
+
+  btn.addEventListener("click", () => {
+
+    if (menu.classList.contains("max-h-0")) {
+      menu.classList.remove("max-h-0", "opacity-0");
+      menu.classList.add("max-h-[500px]", "opacity-100");
+    } else {
+      menu.classList.remove("max-h-[500px]", "opacity-100");
+      menu.classList.add("max-h-0", "opacity-0");
+    }
+
+    openIcon.classList.toggle("rotate-90");
+    openIcon.classList.toggle("opacity-0");
+    closeIcon.classList.toggle("hidden");
+  });
+</script>
+
+  <!-- Banner-->
+ <section id="shawn-banner" class="relative min-h-screen flex items-center py-16 overflow-hidden">
+  <img src="public/banner.png"
+       class="absolute inset-0 w-full h-full object-cover -z-10"
+       alt="">
+
+  <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+    <div class="max-w-xl w-full text-center lg:text-left">
+      <span class="inline-flex items-center gap-2 bg-[#FBFF8D] text-black px-3 py-2 rounded-full text-[12px]  italic">
+        <span><img src="public/fire.png" alt=""></span>
+      কিছু ওভারলাইন মানানসই টেক্সট এখানে থাকবে
+      </span>
+      <div class="">
+        <h1 class="text-4xl md:text-[72px] leading-[120%] font-extrabold">Web and Software</h1>
+      <span class="text-4xl md:text-6xl italic font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent"> -এর জন্য টাইটেল </span>
+      </div>
+
+      <p class="text-[#A9B0B8] mt-6">
+ লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
+      </p>
+
+      <div class="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-6">
+        <h1 class="p-2 bg-[#634071] inline-flex items-center gap-3 text-white border-2 rounded-lg border-[#EDB5FF]">
+          বাটন লেবেল 
+          <span><img src="public/heart rate-monitor.svg" alt=""></span>
+        </h1>
+
+        <h1 class="p-2 bg-[#3D6849] inline-flex items-center gap-3 text-white border-2 rounded-lg border-[#96FFA2]">
+         বাটন লেবেল 
+          <span><img src="public/users.svg" alt=""></span>
+        </h1>
+
+        <h1 class="p-2 bg-[#7C523D] inline-flex items-center gap-3 text-white border-2 rounded-lg border-[#FFC081]">
+         বাটন লেবেল 
+          <span><img src="public/crown.svg" alt=""></span>
+        </h1>
+      </div>
+
+      <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+        <button class="px-4 py-2 border border-purple-500 rounded-lg hover:bg-purple-600 transition flex items-center gap-2">
+     আপ্লাই করুন ৪০% ডিসকাউন্ট
+          <span><img src="public/arrow-bar-to-down.svg" alt=""></span>
+        </button>
+
+        <button class="px-4 py-2 border border-purple-500 rounded-lg hover:bg-purple-600 transition flex items-center gap-2">
+         কারিকুলাম ডাউনলোড করুন 
+          <span><img src="public/crown.svg" alt=""></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="w-full max-w-md">
+      <div class="relative">
+        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-400 to-blue-800 blur-xl opacity-40"></div>
+        <div class="relative bg-black p-6 sm:p-8 rounded-2xl border border-white/10">
+          <h3 class="text-xl font-semibold text-center">আপনার আসন এখনই নিশ্চিত করুন</h3>
+          <h3 class="text-xl font-semibold text-center">আপনার আসন এখনই নিশ্চিত করুন</h3>
+          <p class="text-gray-400 text-center mt-2 mb-6 text-sm">
+            আপনার পেশাদার ক্যারিয়ার বিনামূল্যে শুরু করুন
+          </p>
+
+          <form class="mt-8 space-y-4">
+
+            <div>
+              <label class="text-sm text-gray-400">আপনার পুরো নাম</label>
+              <input type="text"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-fullname"
+                placeholder="এখানে লিখুন"> 
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-400">ইমেইল ঠিকানা</label>
+              <input type="email"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-email"
+                placeholder="এখানে লিখুন">
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-400">ফোন নম্বর</label>
+              <input type="tel"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-phone"
+                placeholder="এখানে লিখুন">
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-400">ক্যারিয়ারের লক্ষ্য</label>
+              <input type="text"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-goals"
+                placeholder="এখানে লিখুন">
+            </div>
+
+            <button type="submit"
+              class="w-full mt-4 cursor-pointer bg-gradient-to-r from-purple-500 to-blue-500 py-3 rounded-lg font-semibold text-white hover:opacity-90 transition">
+              আমার আসন বুক করুন →
+            </button>
+
+            <p class="text-gray-500 text-xs text-center">
+         এখানে কিছু মানানসই টেক্সট থাকবে
+            </p>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   
+ <section id="promotionVideo"
+  class="relative py-20 bg-black md:bg-[url('/images/prmtBanr.png')] bg-[position:center_top] bg-center bg-no-repeat">
+
+  <div class="container mx-auto relative z-10">
+
+    <!-- Heading -->
+    <div class="text-center px-4">
+      <h2 class="text-white text-3xl md:text-[56px] font-bold">
+       এখানে প্রচারমূলক
+        <span class="italic text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500">
+         ভিডিও থাকবে
+        </span>
+      </h2>
+
+      <p class="text-white text-sm max-w-2xl mx-auto mt-4 leading-6">
+      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস
+      </p>
+    </div>
+
+    <!-- Video Box -->
+    <div class="mt-12 px-4">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="p-[3px] bg-gradient-to-r from-[#4e95ff] to-[#7f5cff] rounded-2xl">
+
+          <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black">
+
+            <iframe
+              src="https://www.youtube.com/embed/hhQrmc2T-DU"
+              class="absolute inset-0 w-full h-full"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Text Section -->
+    <div class="mt-16 grid md:grid-cols-3 gap-10 text-gray-300 text-sm px-4">
+      
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">
+          এখানে কিছু টেক্সট থাকবে
+        </h3>
+        <p>
+          লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">
+          এখানে কিছু টেক্সট থাকবে
+        </h3>
+        <p>
+        লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">
+         এখানে কিছু টেক্সট থাকবে
+        </h3>
+        <p>
+        লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <!-- Course module-->
+<section id="shawn-course-module" class="relative lg:py-15 overflow-hidden bg-black">
+
+  <img src="public/Course Module 1.png"
+       class="absolute inset-0 w-full h-auto max-w-full object-contain">
+
+  <div class="absolute inset-0 -z-10"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+
+    <h2 class=" text-3xl md:text-5xl font-bold mt-10 lg:mt-0 text-center">
+      এখানে কোর্স 
+      <span class="italic bg-gradient-to-r from-purple-300 to-blue-500 bg-clip-text text-transparent">
+   মডিউল থাকবে
+      </span>
+    </h2>
+
+    <p class="text-gray-400 max-w-200 mx-auto text-center mt-6">
+লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস
+    </p>
+
+
+    <div class="grid lg:grid-cols-2 gap-6 mt-16">
+      
+
+        <!-- Dropdown 1 -->
+        <div class="dropdown" data-id="1">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Container.svg">
+              <span class="font-medium">Module title will be here</span>
+            </div>
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+             লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। 
+          </div>
+        </div>
+
+        <!-- Dropdown 3 -->
+        <div class="dropdown" data-id="3">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Container (1).svg">
+              <span class="font-medium">মডিউলের টাইটেল এখানে থাকবে</span>
+            </div>
+
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। 
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown 5 -->
+        <div class="dropdown" data-id="5">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Container (3).svg">
+              <span class="font-medium">মডিউলের টাইটেল এখানে থাকবে</span>
+            </div>
+
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।  
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown 7 -->
+        <div class="dropdown" data-id="7">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Container.svg">
+              <span class="font-medium">মডিউলের টাইটেল এখানে থাকবে</span>
+            </div>
+
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। 
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="flex flex-col gap-6">
+
+        <!-- Dropdown 2 -->
+        <div class="dropdown" data-id="2">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Containerrr.svg">
+              <span class="font-medium">মডিউলের টাইটেল এখানে থাকবে</span>
+            </div>
+
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+             লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। 
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown 4 -->
+        <div class="dropdown" data-id="4">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Container (2).svg">
+              <span class="font-medium">মডিউলের টাইটেল এখানে থাকবে</span>
+            </div>
+
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। 
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown 6 -->
+        <div class="dropdown" data-id="6">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Container (4).svg">
+              <span class="font-medium">মডিউলের টাইটেল এখানে থাকবে</span>
+            </div>
+
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। 
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown 8 -->
+        <div class="dropdown" data-id="8">
+          <button class="dropdown-btn w-full px-6 py-4 flex justify-between items-center bg-slate-900/80 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+            <div class="flex items-center gap-3">
+              <img src="public/Container (6).svg">
+              <span class="font-medium">মডিউলের টাইটেল এখানে থাকবে</span>
+            </div>
+
+            <span class="dropdown-arrow">
+              <svg class="w-4 h-4 transition-transform duration-300" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="dropdown-content overflow-hidden transition-all duration-500 bg-slate-900/80 rounded-b-lg"
+               style="max-height:0; opacity:0;">
+            <div class="px-6 py-4 border-t border-white/10 text-gray-300">
+             লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। 
+            </div>
+          </div>
+        </div>
+
+    
+
+    </div>
+  </div>
+
+</section>
+<!-- last part -->
+
+<section id="shawn-free" class="relative py-5 lg:py-10 px-6">
+
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-[#4b2c82] to-[#0f2d5c]"></div>
+
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-white">
+      কোর্সগুলো
+      <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent italic">
+        ফ্রিতে শিখুন
+      </span>
+    </h2>
+
+    <p class="text-gray-300 mt-6 max-w-2xl mx-auto text-sm md:text-base">
+লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস
+    </p>
+
+
+<div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+  <div class="group relative bg-black rounded-xl p-8 border border-white/10 
+              hover:border-purple-500 transition-all duration-300
+              flex flex-col items-center justify-center text-center min-h-[220px]">
+
+    <div class="absolute inset-0 rounded-xl bg-gradient-to-r 
+                from-purple-500 to-blue-500 opacity-0 blur-xl 
+                group-hover:opacity-30 transition"></div>
+
+    <div class="relative flex flex-col items-center">
+      <img src="public/Frame.svg" alt="" 
+           class="h-12 w-auto mb-6">
+      <p class="text-gray-300 text-sm">
+               এখানে কোর্সের নাম থাকবে →
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Card 2 -->
+  <div class="group relative bg-black rounded-xl p-8 border border-white/10 
+              hover:border-cyan-400 transition-all duration-300
+              flex flex-col items-center justify-center text-center min-h-[220px]">
+
+    <div class="absolute inset-0 rounded-xl bg-cyan-500 opacity-0 blur-xl 
+                group-hover:opacity-30 transition"></div>
+
+    <div class="relative flex flex-col items-center">
+      <img src="public/Frame (1).svg" alt="" 
+           class="h-12 w-auto mb-6">
+      <p class="text-gray-300 text-sm">
+         এখানে কোর্সের নাম থাকবে →
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Card 3 -->
+  <div class="group relative bg-black rounded-xl p-8 border border-white/10 
+              hover:border-green-400 transition-all duration-300
+              flex flex-col items-center justify-center text-center min-h-[220px]">
+
+    <div class="absolute inset-0 rounded-xl bg-green-400 opacity-0 blur-xl 
+                group-hover:opacity-30 transition"></div>
+
+    <div class="relative flex flex-col items-center">
+      <img src="public/mdi-xml.svg" alt="" 
+           class="h-12 w-auto mb-6">
+      <p class="text-gray-300 text-sm">
+          এখানে কোর্সের নাম থাকবে →
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Card 4 -->
+  <div class="group relative bg-black rounded-xl p-8 border border-white/10 
+              hover:border-pink-400 transition-all duration-300
+              flex flex-col items-center justify-center text-center min-h-[220px]">
+
+    <div class="absolute inset-0 rounded-xl bg-pink-400 opacity-0 blur-xl 
+                group-hover:opacity-30 transition"></div>
+
+    <div class="relative flex flex-col items-center">
+      <img src="public/Frame (2).svg" alt="" 
+           class="h-12 w-auto mb-6">
+      <p class="text-gray-300 text-sm">
+          এখানে কোর্সের নাম থাকবে →
+      </p>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+<!-- last part -->
+<!--nabil section part start-->
+<!-- PROJECT SECTION -->
+
+    <section id="project/nabil">
+      <div class=" relative py-10 md:py-20 px-[4px] lg:px-0">
+        <img class="object-cover absolute inset-0 w-full h-full  " src="images/projects.png" alt="project">
+      <div class="container mx-auto flex flex-col gap-8
+        ">
+          <div class="relative z-10 h-full flex flex-col justify-center items-center gap-4 ">
+         <div class="flex text-center gap-4">
+           <h1 class="text-white text-3xl md:text-[56px] font-semibold md:font-extrabold">এখানে ওয়েব</h1>
+           <h2 class="text-web-brand md:font-extrabold text-3xl md:text-[56px] font-semibold"> প্রজেক্টগুলো থাকবে</h2> 
+         </div>
+            <p class="font-normal md:text-[18px] leading-6 md:leading-9 w-[75%] text-center text-gray-2">লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস</p>
+        </div>
+        <div class="relative z-10 h-[1px]  w-full bg-web-brand "></div>
+        <div class="relative z-10 h-full w-full">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+         
+
+            <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           <div class=" p-4 bg-black rounded-2xl flex flex-col gap-4 ">
+              <div class="">
+                <img class="rounded-xl object-cover h-[160px] w-full" src="./public/images/card-project.png" alt="">
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  
+                  <h2 class= "pb-[40px] text-white font-semibold text-lg ">Expert Consulting Website</h2>
+                </div>
+                <div class="flex gap-2 mt-auto flex-wrap">
+                  <span class="px-3 py-1 text-xs rounded-md bg-purple-500/20 text-[#F0C0FF] "
+                >JavaScript</span>
+                  <span class=" px-3 py-1 text-xs rounded-md bg-blue-500/20 text-[#4891FF] "
+                >Rubi</span>
+                  <span class="px-3 py-1 text-xs rounded-md bg-red-500/20 text-[#FF9697]"
+                >Laravel</span>
+              </div>
+            </div>
+          </div>
+           </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- PROJECT SECTION -->
+<!-- ROADMAP SECTION -->
+ <section id="roadmap/nabil">
+    <div class=" relative py-10 md:py-20 px-[4px] lg:px-0 bg-black">
+        <img class="object-cover absolute inset-0 w-full h-full" src="./public/images/roadmap.svg" alt="project">
+      <div class="container mx-auto flex flex-col gap-8
+        ">
+          <div class="relative z-10 h-full flex flex-col justify-center items-center gap-4 ">
+         <div class="flex md:flex-wrap flex-col text-center gap-4">
+           <h1 class="text-white text-3xl md:text-[56px] font-semibold md:font-extrabold">An exciting</h1>
+           <h2 class="text-web-brand md:font-extrabold text-3xl md:text-[56px] font-semibold"> journey roadmap</h2> 
+         </div>
+         <p class="font-normal md:text-[18px] leading-6 md:leading-9 w-[75%] text-center text-gray-2">Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.</p>
+         
+        </div>
+      
+        <div class="relative z-10 h-full w-full">
+      <div class="flex flex-col gap-6">
+            <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+         <div class="p-[24px] border-2 border-b-2  border-r-2 border-[#CCA3FF] border-linear-to-r from-[#CCA3FF] from-0% to-blackto-100%  bg-black rounded-3xl flex flex-col gap-4 ">
+
+          <div class=" flex items-center ">
+            <div class="py-1 px-5 rounded-[10px] bg-black-2  ">
+              <h2 class="font-inter font-semibold text-[32px] leading-37% text-white">1</h2>
+              
+            </div>
+            <div class="w-full h-[1px] bg-linear-to-r from-[#CCA3FF]/100 from-26% to-[#ffffff]/0 to-100%"></div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h2 class="font-inter font-semibold text-[20px]
+             leading-37% text-white ">Journey Title will be here</h2>
+            <p class="font-inter font-normal  text-[14px] text-gray-1 leading-37%">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.</p>
+          </div>
+         </div>
+           <div class="p-[24px] bg-black rounded-3xl flex flex-col gap-4 ">
+          <div class=" flex items-center ">
+            <div class="py-1 px-5 rounded-[10px] bg-black-2  ">
+              <h2 class="font-inter font-semibold text-[32px] leading-37% text-white">2</h2>
+              
+            </div>
+            <div class="w-full h-[1px] bg-linear-to-r from-[#36FF6C]/100 from-26% to-[#ffffff]/0 to-100%  "></div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h2 class="font-inter font-semibold text-[20px]
+             leading-37% text-white ">Journey Title will be here</h2>
+            <p class="font-inter font-normal  text-[14px]  text-gray-1 leading-37%">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.</p>
+          </div>
+         </div>
+               <div class="p-[24px] bg-black rounded-3xl flex flex-col gap-4 ">
+          <div class=" flex items-center ">
+            <div class="py-1 px-5 rounded-[10px] bg-black-2  ">
+              <h2 class="font-inter font-semibold text-[32px] leading-37% text-white">3</h2>
+              
+            </div>
+            <div class="w-full h-[1px] bg-linear-to-r from-[#36FF6C]/100 from-26% to-[#ffffff]/0 to-100%  "></div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h2 class="font-inter font-semibold text-[20px]
+             leading-37% text-white ">Journey Title will be here</h2>
+            <p class="font-inter font-normal  text-[14px]  text-gray-1 leading-37%">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.</p>
+          </div>
+         </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+               <div class="p-[24px] border-2 border-b-2  border-r-2 border-[#CCA3FF] border-linear-to-r from-[#CCA3FF] from-0% to-blackto-100%  bg-black rounded-3xl flex flex-col gap-4 ">
+
+        <div class=" flex items-center ">
+          <div class="py-1 px-5 rounded-[10px] bg-black-2  ">
+            <h2 class="font-inter font-semibold text-[32px] leading-37% text-white">4</h2>
+            
+          </div>
+          <div class="w-full h-[1px] bg-linear-to-r from-[#CCA3FF]/100 from-26% to-[#ffffff]/0 to-100%  "></div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h2 class="font-inter font-semibold text-[20px]
+           leading-37% text-white ">Journey Title will be here</h2>
+          <p class="font-inter font-normal  text-[14px]  text-gray-1 leading-37%">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.</p>
+        </div>
+       </div>
+             <div class="p-[24px] border-2 border-b-2  border-r-2 border-[#CCA3FF] border-linear-to-r from-[#CCA3FF] from-0% to-blackto-100%  bg-black rounded-3xl flex flex-col gap-4 ">
+
+        <div class=" flex items-center ">
+          <div class="py-1 px-5 rounded-[10px] bg-black-2  ">
+            <h2 class="font-inter font-semibold text-[32px] leading-37% text-white">1</h2>
+            
+          </div>
+          <div class="w-full h-[1px] bg-linear-to-r from-[#CCA3FF]/100 from-26% to-[#ffffff]/0 to-100%  "></div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h2 class="font-inter font-semibold text-[20px]
+           leading-37% text-white ">Journey Title will be here</h2>
+          <p class="font-inter font-normal  text-[14px]  text-gray-1 leading-37%">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros.</p>
+        </div>
+       </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </section>
+    <!--slider-section -->
+ <section id="slider/nabil">
+    <div class=" relative py-10 md:py-20 px-[4px] lg:px-0 bg-black">
+   
+      <div class=" flex flex-col gap-8
+        ">
+          <div class="relative z-10 h-full flex flex-col justify-center items-center gap-4 ">
+         <div class="flex md:flex-wrap flex-col text-center gap-4">
+           <h1 class="text-white text-3xl md:text-[56px] font-semibold md:font-extrabold">Our Students</h1>
+           <h2 class="text-web-brand md:font-extrabold text-3xl md:text-[56px] font-semibold"> Shared their Stories</h2> 
+         </div>
+         <p class="font-normal md:text-[18px] leading-6 md:leading-9 w-[75%] text-center text-gray-2">Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.</p>
+         
+        </div>
+      
+        <div class="relative z-10 h-full w-full ">
+     
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+     
+        
+          <div class="p-4 bg-white col-span-1 flex flex-col lg:flex-row items-center gap-6 rounded-[20px] ">
+          <div class="w-full max-w-[274px] h-[228px] overflow-hidden rounded-xl flex-shrink-0  ">
+            <img class="w-full h-full object-cover " src="./public/images/profile.png" alt="">
+          </div>
+          <div class=" flex flex-col justify-between gap-5 text-black ">
+            <div class=" space-y-2.5">
+              <div class="flex items-center gap-1">
+              <p class="font-inter text-black font-semibold leading-[150%] text-[20px]">5.0</p>
+              <div class="flex items-center gap-1 ">
+                <img src="./public/images//star.svg" alt="">
+                 <img src="./public/images//star.svg" alt="">
+                  <img src="./public/images//star.svg" alt="">
+                   <img src="./public/images//star.svg" alt="">
+                    <img src="./public/images//star.svg" alt="">
+                    <img src="./public/images//star.svg" alt="">
+              </div>
+            </div>
+            <p class="font-inter font-normal text-[14px] leading-[150%]  ">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet consectetur. nisi donec neque ut mauris nulla eros.</p>
+            </div>
+            <div class="">
+              <h1 class="font-inter font-semibold text-[20px] leading-[150%] ">Maisha Ahmed</h1>
+              <p class="font-inter font-black-3 text-[14px] leading-[150%] ">
+                Batch - DMT 2507
+              </p>
+            </div>
+          </div>
+
+        </div>
+           <div class="p-4 bg-white flex  flex-col lg:flex-row items-center gap-6 rounded-[20px] ">
+          <div class="w-[274px] h-[228px] overflow-hidden rounded-xl flex-shrink-0  ">
+            <img src="./public/images/profile.png" alt="">
+          </div>
+          <div class=" flex flex-col justify-between gap-5 text-black ">
+            <div class=" space-y-2.5">
+              <div class="flex items-center gap-1">
+              <p class="font-inter text-black font-semibold leading-[150%] text-[20px]">5.0</p>
+              <div class="flex items-center gap-1 ">
+                <img src="./public/images//star.svg" alt="">
+                 <img src="./public/images//star.svg" alt="">
+                  <img src="./public/images//star.svg" alt="">
+                   <img src="./public/images//star.svg" alt="">
+                    <img src="./public/images//star.svg" alt="">
+                    <img src="./public/images//star.svg" alt="">
+              </div>
+            </div>
+            <p class="font-inter font-normal text-[14px] leading-[150%]  ">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet consectetur. nisi donec neque ut mauris nulla eros.</p>
+            </div>
+            <div class="">
+              <h1 class="font-inter font-semibold text-[20px] leading-[150%] ">Maisha Ahmed</h1>
+              <p class="font-inter font-black-3 text-[14px] leading-[150%] ">
+                Batch - DMT 2507
+              </p>
+            </div>
+          </div>
+     
+      
+    
+        </div>
+           <div class="p-4 bg-white flex  flex-col lg:flex-row items-center gap-6 rounded-[20px] ">
+          <div class="w-[274px] h-[228px] overflow-hidden rounded-xl flex-shrink-0  ">
+            <img src="./public/images/profile.png" alt="">
+          </div>
+          <div class=" flex flex-col justify-between gap-5 text-black ">
+            <div class=" space-y-2.5">
+              <div class="flex items-center gap-1">
+              <p class="font-inter text-black font-semibold leading-[150%] text-[20px]">5.0</p>
+              <div class="flex items-center gap-1 ">
+                <img src="./public/images//star.svg" alt="">
+                 <img src="./public/images//star.svg" alt="">
+                  <img src="./public/images//star.svg" alt="">
+                   <img src="./public/images//star.svg" alt="">
+                    <img src="./public/images//star.svg" alt="">
+                    <img src="./public/images//star.svg" alt="">
+              </div>
+            </div>
+            <p class="font-inter font-normal text-[14px] leading-[150%]  ">Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies eget amet faucibus diam. Dictum pharetra nisi donec neque ut mauris nulla eros. Lorem ipsum dolor sit amet consectetur. nisi donec neque ut mauris nulla eros.</p>
+            </div>
+            <div class="">
+              <h1 class="font-inter font-semibold text-[20px] leading-[150%] ">Maisha Ahmed</h1>
+              <p class="font-inter font-black-3 text-[14px] leading-[150%] ">
+                Batch - DMT 2507
+              </p>
+            </div>
+          </div>
+     
+      
+    
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </section>
+    <!--slider-section -->
+    <!-- career starts -->
+
+<section id="shawn-career" class="relative py-10 px-6 bg-black ">
+  <div class=" relative max-w-7xl mx-auto rounded-3xl bg-gradient-to-r from-[#10143a] to-[#1d1655] p-8 md:p-14 shadow-2xl overflow-hidden">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-white">
+          কোর্সগুলো <br />
+          <span class="bg-gradient-to-r italic from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            ফ্রিতে শিখুন
+          </span>
+        </h1>
+
+        <p class="text-gray-400 mt-6 max-w-lg">
+লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস আলট্রিসিস
+        </p>
+
+        <div class="mt-6 inline-flex items-center gap-2 bg-[#FBFF8D] text-black font-medium px-5 py-2 rounded-full shadow-md">
+          <img src="public/siren-siren-svgrepo-com (1) 1.svg" alt=""> এখানে কোর্সের নাম থাকবে
+        </div>
+
+        <div class="mt-10 rounded-2xl shadow-xl">
+          <div class="flex flex-wrap gap-6 text-4xl">
+          <img src="public/siren-siren-svgrepo-com (1) 5.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="relative">
+
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-900 blur-2xl rounded-2xl opacity-100"></div>
+        <div class="relative bg-black rounded-2xl p-8 md:p-10 shadow-2xl border border-purple-500/30">
+          <h2 class="text-2xl md:text-3xl font-bold text-center text-white">
+            Book Your Seat Now
+          </h2>
+
+          <p class="text-gray-400 text-center mt-2 text-sm">
+            Start building your professional career for free
+          </p>
+
+          <form class="mt-8 space-y-5">
+
+            <div>
+              <label class="text-sm text-gray-400">Your Full Name</label>
+              <input type="text"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-fullname"
+                placeholder="Enter Here">
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-400">Email Address</label>
+              <input type="email"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-email"
+                placeholder="Enter Here">
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-400">Phone Number</label>
+              <input type="tel"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-phone"
+                placeholder="Enter Here">
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-400">Career Goals</label>
+              <input type="text"
+                class="w-full mt-2 bg-[#14183f] border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 input-icon-goals"
+                placeholder="Enter Here">
+            </div>
+
+            <button type="submit"
+              class="w-full cursor-pointer mt-4 bg-gradient-to-r from-purple-500 to-blue-500 py-3 rounded-lg font-semibold text-white hover:opacity-90 transition">
+              CTA Label Here →
+            </button>
+
+            <p class="text-gray-500 text-xs text-center">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- career -->
+
+
+
+<!-- web -->
+
+<section id="shawn-web" class="relative py-5 md:py-30 flex items-center justify-center overflow-hidden bg-black">
+
+  <img 
+    src="public/Group 13.png" 
+    alt=""
+    class="w-full h-auto object-cover"
+  >
+  <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+    <h2 class="text-white 
+               text-2xl sm:text-3xl md:text-5xl lg:text-6xl 
+               font-bold leading-tight max-w-6xl">
+      Eye Catchy Web Development Banner
+    </h2>
+  </div>
+
+</section>
+<!-- FAQ / LIGHTNING SECTION -->
+<section id="lightning-nabil">
+  <div class="py-10 sm:py-[120px] bg-black">
+    <div class="relative container mx-auto flex flex-col gap-8 px-[4px] lg:px-0">
+      <div class="h-full w-full flex flex-col justify-center items-center gap-4 text-center">
+        <div class="flex flex-col sm:flex-row gap-4">
+          <h1 class="text-white text-4xl md:text-[56px] font-semibold md:font-extrabold">
+            Frequently Asked
+          </h1>
+          <h2 class="text-web-brand md:font-extrabold text-4xl md:text-[56px] font-semibold">
+            Questions
+          </h2>
+        </div>
+
+        <p class="font-normal md:text-[18px] leading-6 md:leading-9 w-[75%] text-center text-gray-2">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-6 w-[70%] mx-auto">
+        <!-- FAQ ITEM -->
+        <div class="p-6 rounded-2xl  bg-[#100F28]">
+          <details
+            open
+            class="group rounded-xl border border-transparent group-open:border-[#6C63FF] transition text-white"
+          >
+            <summary class="cursor-pointer flex items-center justify-between px-6 font-semibold list-none">
+              <span>Title wil be here for the frequently asked question</span>
+
+              <span class="text-4xl text-[#6C63FF] font-bold w-10 text-right">
+                <span class="group-open:hidden">+</span>
+                <span class="hidden group-open:inline">-</span>
+              </span>
+            </summary>
+
+            <p class="px-6 p-4 text-gray-400 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+            </p>
+          </details>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#100F28]">
+          <details
+            
+            class="group rounded-xl border border-transparent group-open:border-[#6C63FF] transition text-white"
+          >
+            <summary class="cursor-pointer flex items-center justify-between px-6 font-semibold list-none">
+              <span>Title wil be here for the frequently asked question</span>
+
+              <span class="text-4xl text-[#6C63FF] font-bold w-10 text-right">
+                <span class="group-open:hidden">+</span>
+                <span class="hidden group-open:inline">-</span>
+              </span>
+            </summary>
+
+            <p class="px-6 p-4 text-gray-400 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+            </p>
+          </details>
+        </div>
+        <div class="p-6 rounded-2xl  bg-[#100F28]">
+          <details
+          
+            class="group rounded-xl  border border-transparent group-open:border-[#6C63FF] transition text-white"
+          >
+            <summary class="cursor-pointer flex items-center justify-between px-6 font-semibold list-none">
+              <span>Title wil be here for the frequently asked question</span>
+
+              <span class="text-4xl text-[#6C63FF] font-bold w-10 text-right">
+                <span class="group-open:hidden">+</span>
+                <span class="hidden group-open:inline">-</span>
+              </span>
+            </summary>
+
+            <p class="px-6 p-4 text-gray-400 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+            </p>
+          </details>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#100F28]">
+          <details
+          
+            class="group rounded-xl  border border-transparent group-open:border-[#6C63FF] transition text-white"
+          >
+            <summary class="cursor-pointer flex items-center justify-between px-6 font-semibold list-none">
+              <span>Title wil be here for the frequently asked question</span>
+
+              <span class="text-4xl text-[#6C63FF] font-bold w-10 text-right">
+                <span class="group-open:hidden">+</span>
+                <span class="hidden group-open:inline">-</span>
+              </span>
+            </summary>
+
+            <p class="px-6 p-4 text-gray-400 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+            </p>
+          </details>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#100F28]">
+          <details
+          
+            class="group rounded-xl border border-transparent group-open:border-[#6C63FF] transition text-white"
+          >
+            <summary class="cursor-pointer flex items-center justify-between px-6 font-semibold list-none">
+              <span>Title wil be here for the frequently asked question</span>
+
+              <span class="text-4xl text-[#6C63FF] font-bold w-10 text-right">
+                <span class="group-open:hidden">+</span>
+                <span class="hidden group-open:inline">-</span>
+              </span>
+            </summary>
+
+            <p class="px-6 p-4 text-gray-400 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit.
+            </p>
+          </details>
+        </div>
+
+        <!-- বাকি FAQ গুলা তোমার মতোই থাকবে -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--nabil section part end -->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const buttons = document.querySelectorAll(".dropdown-btn");
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const currentDropdown = button.closest(".dropdown");
+      const currentContent = currentDropdown.querySelector(".dropdown-content");
+      const currentArrow = currentDropdown.querySelector(".dropdown-arrow svg");
+      const isActive = currentDropdown.classList.contains("active");
+
+      document.querySelectorAll(".dropdown").forEach(dropdown => {
+        dropdown.classList.remove("active");
+
+        const content = dropdown.querySelector(".dropdown-content");
+        const arrow = dropdown.querySelector(".dropdown-arrow svg");
+        if (content) {
+          content.style.maxHeight = "0";
+          content.style.opacity = "0";
+        }
+        if (arrow) {
+          arrow.style.transform = "rotate(0deg)";
+        }
+      });
+
+      if (!isActive) {
+        currentDropdown.classList.add("active");
+        currentContent.style.maxHeight = currentContent.scrollHeight + "px";
+        currentContent.style.opacity = "1";
+        currentArrow.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+});
+</script>
+<footer class="bg-[#5C51FD] text-white relative rounded-t-[50px] ">
+     <div style="background-color: rgba(0, 0, 0, 0.81);" class=" absolute inset-0  z-10"></div> 
+      <div class="container mx-auto relative z-20 lg:py-16 py-10 ">
+         <div 
+        class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-27 md:gap-4 sm:gap-3 lg:items-center items-start  border-b border-purple-800 lg:pb-16 md:pb-9 pb-8">
+ 
+           <div class="w-40 lg:w-70 lg:mx-0 mx-auto">
+             <img src="./public/logo.png" alt="logo.png" class="">
+           </div>
+ 
+           <div class="text-center ">
+             <h3 class="lg:text-14 md:text-base text-[9px] font-medium  lg:mb-4 mb-1  ">For Any Queries,Feel Free To Contact Us
+             </h3>
+             <div class="grid grid-cols-1 sm:grid-cols-2 lg:gap-y-2 gap-y-1 gap-x-4  text-sm text-gray-300">
+               <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px]">
+                 <span class="text-[#7B61FF]">
+                   <img src="./public/phone-call.png" alt="" class="lg:w-6 w-4">
+ 
+                 </span> 017XX XXX XXX
+               </div>
+               <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px] ">
+                 <span class="text-[#7B61FF]">
+                   <img src="./public/mail.png" alt="" class="lg:w-6 w-4">
+                 </span> supposemail.com
+               </div>
+               <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px]">
+                 <span class="text-[#7B61FF]">
+                   <img src="./public/phone-call.png" alt="" class="lg:w-6 w-4">
+ 
+                 </span>017XX XXX XXX
+               </div>
+               <div class="flex items-center justify-center lg:justify-start gap-2 lg:text-sm  md:text-sm text-[10px]">
+                 <span class="text-[#7B61FF]">
+                   <img src="./public/mail.png" alt="" class="lg:w-6 w-4">
+                 </span>    supposemail.com
+               </div>
+             </div>
+           </div>
+ 
+           <div class="text-center col-span-2 lg:col-span-1 ">
+             <h3 class="text-base font-medium mb-4  lg:-mr-15 ">Download App</h3>
+             <div class="flex justify-center  lg:justify-end gap-3">
+               <img src="./public/images/foterl1.png" alt="Play Store" class="h-15 w-29 cursor-pointer">
+               <img src="./public/images/foterl2.png" alt="App Store" class="h-15 w-29 cursor-pointer">
+             </div>
+           </div>
+         </div>
+ 
+         <div
+           class="lg:mt-16 md:mt-5 mt-5 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3  lg:gap-x-36  gap-x-5 lg:gap-y-12 gap-y-3 ">
+ 
+           <div class="text-center flex flex-col items-center">
+             <div class="flex items-center lg:gap-2 md:gap-1 gap-0 lg:mb-2 mb-1">
+               <svg class="w-4 h-4 text-[#7B61FF]" fill="currentColor" viewBox="0 0 24 24">
+                 <path
+                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+               </svg>
+               <h4 class="font-semibold lg:text-base md:text-sm text-[10px]">HeadOffice-MainCampus</h4>
+             </div>
+             <p class="lg:text-xs md:text-xs text-[9px] font-medium text-gray-400 leading-relaxed max-w-55">
+               MomtazPlaza,Dhanmondi,Dhaka <br> +8801777308777,+8801624666000
+             </p>
+           </div>
+ 
+           <div class="text-center flex flex-col items-center">
+             <div class="flex items-center gap-2 lg:mb-2 mb-1">
+               <svg class="w-4 h-4 text-[#7B61FF]" fill="currentColor" viewBox="0 0 24 24">
+                 <path
+                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+               </svg>
+               <h4 class="font-semibold lg:text-base md:text-sm text-[10px]">Campus2-Dhanmondi</h4>
+             </div>
+             <p class="lg:text-xs md:text-xs text-[9px] font-medium text-gray-400 leading-relaxed max-w-55">
+               Meher Plaza, Dhanmondi, Dhaka <br> +8801625555444,+8801990779782
+             </p>
+           </div>
+ 
+           <div class="text-center flex flex-col items-center col-span-2 lg:col-span-1 lg:mt-0 mt-3">
+             <div class="flex items-center gap-2 lg:mb-2 mb-1">
+               <svg class="w-4 h-4 text-[#7B61FF]" fill="currentColor" viewBox="0 0 24 24">
+                 <path
+                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+               </svg>
+               <h4 class="font-semibold lg:text-base md:text-sm text-[10px]">MirpurBranch</h4>
+             </div>
+             <p class="lg:text-xs md:text-xs text-[9px] font-medium text-gray-400 leading-relaxed max-w-55">
+               El Mercado,Dhaka1216<br>+8801310010027,+8801924222999
+             </p>
+           </div>
+         </div>
+ 
+         <div
+           class="lg:mt-16 md:mt-5 mt-5 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4  lg:gap-x-[55px]  gap-x-5 lg:gap-y-12 gap-y-4">
+           <div class="text-center flex flex-col items-center">
+             <div class="flex items-center lg:mb-2 mb-1">
+               <svg class="w-4 h-4 text-[#7B61FF]" fill="currentColor" viewBox="0 0 24 24">
+                 <path
+                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+               </svg>
+               <h4 class="font-semibold lg:text-base md:text-sm text-[10px]">Uttara Branch</h4>
+             </div>
+             <p class="lg:text-xs md:text-xs text-[9px] font-medium text-gray-400 leading-relaxed max-w-55">
+               RAJUK Razib Shopping Complex <br>Uttara,Dhaka-1230 +8801990779827
+             </p>
+           </div>
+ 
+           <div class="text-center flex flex-col items-center">
+             <div class="flex items-center lg:mb-2 mb-1">
+               <svg class="w-4 h-4 text-[#7B61FF]" fill="currentColor" viewBox="0 0 24 24">
+                 <path
+                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+               </svg>
+               <h4 class="font-semibold lg:text-base md:text-sm text-[10px]">Chattogram Branch</h4>
+             </div>
+             <p class="lg:text-xs md:text-xs text-[9px] font-medium text-gray-400 leading-relaxed max-w-55 ">
+               9 No, Kapasgola Road Chawk Bazar <br> +8801847422965,+8801847422968
+             </p>
+           </div>
+ 
+           <div class="text-center flex flex-col items-center lg:mt-0 mt-2">
+             <div class="flex items-center lg:mb-2 mb-1">
+               <svg class="w-4 h-4 text-[#7B61FF]" fill="currentColor" viewBox="0 0 24 24">
+                 <path
+                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+               </svg>
+               <h4 class="font-semibold lg:text-base md:text-sm text-[10px]">Panchagarh Branch</h4>
+             </div>
+             <p class="lg:text-xs md:text-xs text-[9px] font-medium text-gray-400 leading-relaxed max-w-55">
+               Abdul Aziz Super Market, <br> Panchagarh Bazar 01704048383
+             </p>
+           </div>
+ 
+           <div class="text-center flex flex-col items-center">
+             <div class="flex items-center lg:mb-2 mb-1">
+               <svg class="w-4 h-4 text-[#7B61FF]" fill="currentColor" viewBox="0 0 24 24">
+                 <path
+                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+               </svg>
+               <h4 class="font-semibold lg:text-base md:text-sm text-[10px]">Canada Branch</h4>
+             </div>
+             <p class="lg:text-xs md:text-xs text-[9px] font-medium text-gray-400 leading-relaxed max-w-55">
+               61 Lakewood Ave, Saint John <br>NBE2J3N9,Canada+1672-377-9977
+             </p>
+           </div>
+         </div>
+ 
+       </div>
+  </footer>
+
+  <!-- course module -->
+</body>
+</html>
